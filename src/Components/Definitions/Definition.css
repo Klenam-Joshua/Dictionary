@@ -1,0 +1,29 @@
+.a {
+    color: #01012b
+}
+
+.display_container {
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+}
+
+#speaker {
+    padding-top: 0.5rem;
+    cursor: pointer;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.definition {
+    margin: 1rem 0.1rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+
+}
+
+.text-gray {
+    color: #7c7b7b;
+}

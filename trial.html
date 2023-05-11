@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        span {
+            cursor: pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <audio id="audio" src="https://api.dictionaryapi.dev/media/pronunciations/en/high-us.mp3">
+
+    </audio>
+    <span>play</span>
+    <script>
+        //   let audio = document.getElementById("audio");
+        let span = document.getElementsByTagName("span")[0]
+
+        //   span.addEventListener("click",playAudio)
+        //   function playAudio(){
+        //          audio.play()
+        //let element = "<audio  src='https://api.dictionaryapi.dev/media/pronunciations/en/high-us.mp3'></audio>";
+        // span.insertAdjacentHTML("beforeend",element)
+        //   }
+        span.addEventListener("click", playAudio)
+        async function playAudio() {
+            // let  audio = await new audio('https://api.dictionaryapi.dev/media/pronunciations/en/high-us.mp3')
+
+            let audio = await getAudio();
+            console.log(audio)
+        }
+
+        function getAudio() {
+            return (
+                new Promise((resolve) => {
+                    resolve('https://api.dictionaryapi.dev/media/pronunciations/en/high-us.mp3')
+                })
+            )
+        }
+
+    </script>
+</body>
+
+</html>

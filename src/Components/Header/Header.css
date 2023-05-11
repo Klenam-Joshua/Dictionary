@@ -1,0 +1,16 @@
+
+.header{
+    display:flex;
+    justify-content: flex-start;
+    gap:20%;
+    padding:0.5rem 0.3rem;
+}
+
+.menu_container{
+    text-align: center;
+    padding-top: 0.6rem;
+}
+
+.menu_container .nav-link{
+    padding-left:2rem;
+}
